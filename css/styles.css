@@ -18,7 +18,7 @@ header {
   border-radius: 0 0 4.6875vw 4.6875vw;
   min-height: 292px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768.2px) {
   header {
     margin-left: 1.7457897371vw;
     width: 11.3825490858vw;
@@ -34,7 +34,7 @@ nav.mobile {
   flex-direction: row;
   padding-top: 20px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768.2px) {
   nav.mobile {
     visibility: hidden;
     position: absolute;
@@ -80,7 +80,7 @@ nav.desktop {
   flex-direction: row;
   padding-top: 1.3966317897vw;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768.2px) {
   nav.desktop {
     visibility: hidden;
     position: absolute;
@@ -129,7 +129,7 @@ nav.desktop ul li a {
   width: 6.25vw;
   min-width: 25px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768.2px) {
   .tech-content img {
     width: 0.8vw;
     min-width: 0px;
@@ -140,7 +140,7 @@ nav.desktop ul li a {
   margin-top: 10px;
   font-size: 4vw;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768.2px) {
   .tech p {
     font-size: 1.5vw;
     margin-top: 0.5vw;
@@ -158,7 +158,7 @@ nav.desktop ul li a {
   border-radius: 1vw;
   background: #E9EBE4;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768.2px) {
   .MenuPush {
     display: none;
   }
