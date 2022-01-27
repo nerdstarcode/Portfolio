@@ -10,11 +10,12 @@ body {
 }
 
 header {
+  position: relative;
   background: #4B4772;
-  height: 74vw;
+  height: 90vw;
   color: #E9EBE4;
   border-radius: 0 0 4.6875vw 4.6875vw;
-  position: relative;
+  min-height: 292px;
 }
 
 nav {
@@ -55,17 +56,31 @@ nav ul li a {
 }
 
 .tech {
+  margin-top: 20px;
   opacity: 0.4;
   text-align: center;
 }
 
 .tech-content img {
   width: 6.25vw;
+  min-width: 25px;
 }
 
 .tech p {
-  margin: 0;
+  margin-top: 10px;
   font-size: 4vw;
+}
+
+.MenuPush {
+  position: absolute;
+  bottom: 2vw;
+  transform: translatex(43.5vw);
+  width: 13.125vw;
+  min-width: 42;
+  height: 1.562vw;
+  max-height: 5px;
+  border-radius: 1vw;
+  background: #E9EBE4;
 }
 
 /*# sourceMappingURL=styles.css.map */

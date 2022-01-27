@@ -7,11 +7,12 @@ body
     background: url(../img/bgpage.png), #3F3A6F
     width: 100%
 header
+    position: relative
     background: defaut.$MenuBg
     height: defaut.$MenuHeight
     color: defaut.$White
     border-radius: 0 0 4.6875vw 4.6875vw
-    position: relative
+    min-height: 292px
 nav
     font-family: defaut.$MenuFont
     color: defaut.$White
@@ -38,11 +39,23 @@ nav ul li a
     text-decoration: none
     color: defaut.$White
 .tech
+    margin-top: 20px
     opacity: 0.4
     text-align: center
 .tech-content img
     width: 6.25vw
+    min-width: 25px
 .tech p 
-    margin: 0
+    margin-top: 10px
     font-size: 4vw
+.MenuPush
+    position: absolute
+    bottom: 2vw
+    transform: translatex(43.5vw)
+    width: 13.125vw
+    min-width: 42
+    height: 1.562vw
+    max-height: 5px
+    border-radius: 1vw
+    background: defaut.$White
     
