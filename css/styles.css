@@ -20,9 +20,9 @@ header {
 }
 @media screen and (min-width: 768px) {
   header {
-    margin-left: 2.1240441801vw;
-    width: 13.8487680544vw;
-    height: 73vw;
+    margin-left: 1.7457897371vw;
+    width: 11.3825490858vw;
+    height: 49vw;
   }
 }
 
@@ -76,9 +76,9 @@ nav.mobile ul li a {
 nav.desktop {
   font-family: "Francois One";
   color: #E9EBE4;
-  font-size: 2vw;
+  font-size: 1.6438356164vw;
   flex-direction: row;
-  padding-top: 20px;
+  padding-top: 1.3966317897vw;
 }
 @media screen and (max-width: 768px) {
   nav.desktop {
@@ -89,9 +89,9 @@ nav.desktop {
 
 nav.desktop ul {
   display: grid;
-  grid-template-columns: 10.2803738318vw;
-  grid-template-rows: 5.6924384027vw 5.6924384027vw 5.6924384027vw 5.6924384027vw 5.6924384027vw 5.6924384027vw 5.6924384027vw 5.6924384027vw;
-  grid-gap: 2vw;
+  grid-template-columns: 8.4496223275vw;
+  grid-template-rows: 3.5vw 3.5vw 3.5vw 3.5vw 3.5vw 3.5vw 3.5vw 3.5vw;
+  grid-gap: 1vw;
   padding: 0;
 }
 
@@ -99,12 +99,12 @@ nav.desktop ul li {
   text-align: center;
   display: inline-block;
   background: url(../img/bgmenu.png), #43395E;
-  border-radius: 1.562vw;
-  box-shadow: 0.2548853016vw 0.424808836vw 0.424808836vw rgba(21, 19, 25, 0.2);
+  border-radius: 1.2838356164vw;
+  box-shadow: 0.2094947685vw 0.3491579474vw 0.3491579474vw rgba(21, 19, 25, 0.2);
 }
 
 nav.desktop ul li img {
-  width: 6.7969413764vw;
+  width: 5.5865271587vw;
 }
 
 nav.desktop ul li.user {
@@ -114,13 +114,13 @@ nav.desktop ul li.user {
 
 nav.desktop ul li a {
   position: absolute;
-  transform: translate(-50%, 50%);
+  transform: translate(-50%, 25%);
   text-decoration: none;
   color: #E9EBE4;
 }
 
 .tech {
-  margin-top: 5px;
+  margin-top: 1.5625vw;
   opacity: 0.4;
   text-align: center;
 }
@@ -131,7 +131,7 @@ nav.desktop ul li a {
 }
 @media screen and (min-width: 768px) {
   .tech-content img {
-    width: 1.1028037383vw;
+    width: 0.8vw;
     min-width: 0px;
   }
 }
