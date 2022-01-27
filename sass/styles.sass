@@ -7,47 +7,97 @@ body
     background: url(../img/bgpage.png), #3F3A6F
     width: 100%
 header
+    z-index: 1000
     position: relative
     background: defaut.$MenuBg
     height: defaut.$MenuHeight
     color: defaut.$White
     border-radius: 0 0 4.6875vw 4.6875vw
     min-height: 292px
-nav
+    @media screen and(min-width: 768px) 
+        margin-left: 2.1240441801189vw
+        width: 13.848768054376vw
+        height: 73vw
+/* MENU MOBILE */
+nav.mobile
     font-family: defaut.$MenuFont
     color: defaut.$White
     font-size: 4vw
     flex-direction: row
     padding-top: 20px 
-nav ul
+    @media screen and(min-width: 768px) 
+        visibility: hidden
+        position: absolute
+nav.mobile ul
     display: grid
     grid-template-columns: 28vw 28vw 28vw
     grid-template-rows: 10vw 10vw 10vw
     grid-gap: 4vw
     padding: 0  
-nav ul li
+nav.mobile ul li
     text-align: center
     display: inline-block
     background: defaut.$MenuColor
     border-radius: 1.562vw
-nav ul li img
+nav.mobile ul li img
     transform: translateY(-14px)
     width: 29vw
-nav ul li.user , nav ul li.gambiarra
+nav.mobile ul li.user , nav ul li.gambiarra
     background: none
-nav ul li a
+nav.mobile ul li a
+    position: absolute
+    transform: translate(-50%, 25%)
     text-decoration: none
     color: defaut.$White
+/* MENU DESKTOP */
+nav.desktop
+    font-family: defaut.$MenuFont
+    color: defaut.$White
+    font-size: 2vw
+    flex-direction: row
+    padding-top: 20px 
+    @media screen and(max-width: 768px) 
+        visibility: hidden
+        position: absolute
+nav.desktop ul
+    display: grid
+    grid-template-columns: 10.280373831776vw
+    grid-template-rows: 5.6924384027188vw 5.6924384027188vw 5.6924384027188vw 5.6924384027188vw 5.6924384027188vw 5.6924384027188vw 5.6924384027188vw 5.6924384027188vw
+    grid-gap: 2vw
+    padding: 0  
+nav.desktop ul li
+    text-align: center
+    display: inline-block
+    background: url(../img/bgmenu.png), defaut.$MenuColor
+    border-radius: 1.562vw
+    box-shadow: 0.25488530161427vw 0.42480883602379vw 0.42480883602379vw rgba(21, 19, 25, 0.2)
+nav.desktop ul li img
+    width: 6.7969413763806vw
+nav.desktop ul li.user
+    background: none
+    box-shadow: none
+nav.desktop ul li a
+    position: absolute
+    transform: translate(-50%, 50%)
+    text-decoration: none
+    color: defaut.$White
+
 .tech
-    margin-top: 20px
+    margin-top: 5px
     opacity: 0.4
     text-align: center
 .tech-content img
     width: 6.25vw
     min-width: 25px
+    @media screen and(min-width: 768px) 
+        width: 1.1028037383178vw
+        min-width: 0px
 .tech p 
     margin-top: 10px
     font-size: 4vw
+    @media screen and(min-width: 768px) 
+        font-size: 1.5vw
+        margin-top: 0.5vw
 .MenuPush
     position: absolute
     bottom: 2vw
@@ -58,4 +108,5 @@ nav ul li a
     max-height: 5px
     border-radius: 1vw
     background: defaut.$White
-    
+    @media screen and(min-width: 768px) 
+        display: none
