@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(../img/bgpage.png), #3F3A6F;
+  width: 100%;
+}
+
+header {
+  background: #4B4772;
+  height: 74vw;
+  color: #E9EBE4;
+  border-radius: 0 0 4.6875vw 4.6875vw;
+  position: relative;
+}
+
+nav {
+  font-family: "Francois One";
+  color: #E9EBE4;
+  font-size: 4vw;
+  flex-direction: row;
+  padding-top: 20px;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: 28vw 28vw 28vw;
+  grid-template-rows: 10vw 10vw 10vw;
+  grid-gap: 4vw;
+  padding: 0;
+}
+
+nav ul li {
+  text-align: center;
+  display: inline-block;
+  background: #43395E;
+  border-radius: 1.562vw;
+}
+
+nav ul li img {
+  transform: translateY(-14px);
+  width: 29vw;
+}
+
+nav ul li.user, nav ul li.gambiarra {
+  background: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #E9EBE4;
+}
+
+.tech {
+  opacity: 0.4;
+  text-align: center;
+}
+
+.tech-content img {
+  width: 6.25vw;
+}
+
+.tech p {
+  margin: 0;
+  font-size: 4vw;
+}
+
+/*# sourceMappingURL=styles.css.map */
