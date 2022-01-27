@@ -22,7 +22,7 @@ header {
   header {
     margin-left: 1.7457897371vw;
     width: 11.3825490858vw;
-    height: 49vw;
+    height: 46vw;
   }
 }
 
@@ -91,16 +91,26 @@ nav.desktop ul {
   display: grid;
   grid-template-columns: 8.4496223275vw;
   grid-template-rows: 3.5vw 3.5vw 3.5vw 3.5vw 3.5vw 3.5vw 3.5vw 3.5vw;
-  grid-gap: 1vw;
+  grid-gap: 0.5vw;
   padding: 0;
 }
 
 nav.desktop ul li {
+  position: relative;
   text-align: center;
   display: inline-block;
   background: url(../img/bgmenu.png), #43395E;
   border-radius: 1.2838356164vw;
   box-shadow: 0.2094947685vw 0.3491579474vw 0.3491579474vw rgba(21, 19, 25, 0.2);
+}
+
+nav.desktop ul li img.corda {
+  position: absolute;
+  bottom: 0;
+  transform: translate(-50%, 70%);
+  width: 5.5vw;
+  height: 2vw;
+  z-index: 100;
 }
 
 nav.desktop ul li img {

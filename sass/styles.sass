@@ -17,7 +17,7 @@ header
     @media screen and(min-width: 768.2px) 
         margin-left: 1.745789737084vw
         width: 11.382549085789vw
-        height: 49vw
+        height: 46vw
 /* MENU MOBILE */
 nav.mobile
     font-family: defaut.$MenuFont
@@ -63,14 +63,24 @@ nav.desktop ul
     display: grid
     grid-template-columns: 8.4496223274871vw
     grid-template-rows: 3.5vw 3.5vw 3.5vw 3.5vw 3.5vw 3.5vw 3.5vw 3.5vw
-    grid-gap: 1vw
+    grid-gap: 0.5vw
     padding: 0  
 nav.desktop ul li
+    position: relative
     text-align: center
     display: inline-block
     background: url(../img/bgmenu.png), defaut.$MenuColor
     border-radius: 1.2838356164384vw
     box-shadow: 0.20949476845009vw 0.34915794741681vw 0.34915794741681vw rgba(21, 19, 25, 0.2)
+nav.desktop ul li img.corda
+    position: absolute
+    bottom: 0
+    transform: translate(-50% , 70%)
+    width: 5.5vw
+    height: 2vw
+    z-index: 100
+
+
 nav.desktop ul li img
     width: 5.586527158669vw
 nav.desktop ul li.user
