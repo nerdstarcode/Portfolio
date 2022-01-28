@@ -97,6 +97,11 @@ nav.mobile ul li a {
   width: 100%;
   height: 6vw;
 }
+@media screen and (min-width: 768.2px) {
+  .MenuPush {
+    display: none;
+  }
+}
 
 .MenuPush-Button {
   position: absolute;
@@ -114,6 +119,7 @@ nav.mobile ul li a {
 @media screen and (min-width: 768.2px) {
   .MenuPush-Button {
     display: none;
+    visibility: hidden;
   }
 }
 
