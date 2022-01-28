@@ -7,19 +7,33 @@ body
     background: url(../img/bgpage.png), #3F3A6F
     width: 100%
 header
-    z-index: 1000
     position: relative
-    background: defaut.$MenuBg
     height: defaut.$MenuHeight
-    color: defaut.$White
-    border-radius: 0 0 4.6875vw 4.6875vw
     min-height: 292px
+    z-index: 1000
+    color: defaut.$White
+    background: defaut.$MenuBg
+    border-radius: 0 0 4.6875vw 4.6875vw
+    top: -80vw
+    transition: 0.2s
+    @media screen and(min-width: 768.2px) 
+        ransition: 0s
+        margin-left: 1.745789737084vw
+        width: 11.382549085789vw
+        height: 46vw
+        top: 0
+header.active
+    top: 0
+    transition: 1s
     @media screen and(min-width: 768.2px) 
         margin-left: 1.745789737084vw
         width: 11.382549085789vw
         height: 46vw
+        transition: 0s
+        top: 0
 /* MENU MOBILE */
 nav.mobile
+    position: relative
     font-family: defaut.$MenuFont
     color: defaut.$White
     font-size: 4vw
@@ -49,6 +63,25 @@ nav.mobile ul li a
     transform: translate(-50%, 25%)
     text-decoration: none
     color: defaut.$White
+.MenuPush
+    position: absolute
+    bottom: 15px
+    width: 100%
+    height: 6vw
+.MenuPush-Button
+    position: absolute
+    bottom: 15px
+    transform: translatex(43.5vw)
+    width: 13.125vw
+    min-width: 42
+    height: 1.562vw
+    max-height: 5px
+    border-radius: 1vw
+    background: defaut.$White
+    cursor: pointer
+    border: none
+    @media screen and(min-width: 768.2px) 
+        display: none
 /* MENU DESKTOP */
 nav.desktop
     font-family: defaut.$MenuFont
@@ -108,15 +141,4 @@ nav.desktop ul li a
     @media screen and(min-width: 768.2px) 
         font-size: 1.5vw
         margin-top: 0.5vw
-.MenuPush
-    position: absolute
-    bottom: 2vw
-    transform: translatex(43.5vw)
-    width: 13.125vw
-    min-width: 42
-    height: 1.562vw
-    max-height: 5px
-    border-radius: 1vw
-    background: defaut.$White
-    @media screen and(min-width: 768.2px) 
-        display: none
+

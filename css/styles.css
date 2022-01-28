@@ -10,24 +10,43 @@ body {
 }
 
 header {
-  z-index: 1000;
   position: relative;
-  background: #4B4772;
   height: 90vw;
-  color: #E9EBE4;
-  border-radius: 0 0 4.6875vw 4.6875vw;
   min-height: 292px;
+  z-index: 1000;
+  color: #E9EBE4;
+  background: #4B4772;
+  border-radius: 0 0 4.6875vw 4.6875vw;
+  top: -80vw;
+  transition: 0.2s;
 }
 @media screen and (min-width: 768.2px) {
   header {
+    ransition: 0s;
     margin-left: 1.7457897371vw;
     width: 11.3825490858vw;
     height: 46vw;
+    top: 0;
+  }
+}
+
+header.active {
+  top: 0;
+  transition: 1s;
+}
+@media screen and (min-width: 768.2px) {
+  header.active {
+    margin-left: 1.7457897371vw;
+    width: 11.3825490858vw;
+    height: 46vw;
+    transition: 0s;
+    top: 0;
   }
 }
 
 /* MENU MOBILE */
 nav.mobile {
+  position: relative;
   font-family: "Francois One";
   color: #E9EBE4;
   font-size: 4vw;
@@ -70,6 +89,32 @@ nav.mobile ul li a {
   transform: translate(-50%, 25%);
   text-decoration: none;
   color: #E9EBE4;
+}
+
+.MenuPush {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  height: 6vw;
+}
+
+.MenuPush-Button {
+  position: absolute;
+  bottom: 15px;
+  transform: translatex(43.5vw);
+  width: 13.125vw;
+  min-width: 42;
+  height: 1.562vw;
+  max-height: 5px;
+  border-radius: 1vw;
+  background: #E9EBE4;
+  cursor: pointer;
+  border: none;
+}
+@media screen and (min-width: 768.2px) {
+  .MenuPush-Button {
+    display: none;
+  }
 }
 
 /* MENU DESKTOP */
@@ -154,23 +199,6 @@ nav.desktop ul li a {
   .tech p {
     font-size: 1.5vw;
     margin-top: 0.5vw;
-  }
-}
-
-.MenuPush {
-  position: absolute;
-  bottom: 2vw;
-  transform: translatex(43.5vw);
-  width: 13.125vw;
-  min-width: 42;
-  height: 1.562vw;
-  max-height: 5px;
-  border-radius: 1vw;
-  background: #E9EBE4;
-}
-@media screen and (min-width: 768.2px) {
-  .MenuPush {
-    display: none;
   }
 }
 
