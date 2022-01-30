@@ -10,7 +10,8 @@ body {
 }
 
 header {
-  position: relative;
+  position: absolute;
+  width: 100vw;
   height: 90vw;
   min-height: 292px;
   z-index: 1000;

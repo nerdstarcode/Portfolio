@@ -1,0 +1,42 @@
+:root{
+    --cor1: #4E008D;
+    --cor2: #6D6E7B;
+    --cor3: #483E63;
+    --cor4: #4B4772;
+    --cor5: #151319;
+    --cor6: #514995;
+    --cor7: #E9EBE4;
+    --cor8: #ECB757;
+    --cor9: #39304F;
+    --cor10: #3F3A6F;
+    --text1: 'Francois One';
+    --text2: 'Ubuntu';
+}
+#Sobre
+{   
+    width: 96vw;
+    background: var(--cor3);
+    transform: translateY(12vw);
+    border-radius: 10vw;
+    margin: 0 2vw 0 2vw ;
+    padding: 4vw;
+    color: var(--cor7);
+    font-family: var(--text2);
+    text-align: justify;
+    font-size: 4vw;
+}
+#Sobre article img 
+{
+    width: 23.125vw;
+    height: 23.125vw;
+}
+@media screen and (min-width: 768.2px)
+{
+    #Sobre{
+        width: 80vw;
+        margin-left: 14.87412856vw;
+        transform: translateY(0);
+        font-size: 2vw;
+
+    }    
+}
