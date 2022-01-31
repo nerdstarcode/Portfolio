@@ -11,6 +11,10 @@
     --cor10: #3F3A6F;
     --text1: 'Francois One';
     --text2: 'Ubuntu';
+    --bgCard: #443960;
+    --bgCardOpacity: rgba(68, 57, 96, 0.8);
+    --colorTextGradient: linear-gradient(90deg, #ECB757, #4E008D);
+
 }
 #Sobre
 {   
@@ -24,12 +28,16 @@
     font-family: var(--text2);
     text-align: justify;
     font-size: 4vw;
+    box-shadow: 1vw 1vw 2vw rgba(0,0,0,0.3);
 }
 #Sobre article img 
 {
     transform: translate(-2vw, 4vw);
     width: 20vw;
     height: 20vw;
+    box-shadow: 0 2vw 4vw hsla(273, 83%, 66%, 0.445);
+    border-radius: 50%;
+    justify-content: center;
 }
 #carouselExampleIndicators button.carousel-control-prev
 {
@@ -47,7 +55,7 @@
     {
         width: 70vw;
         margin-left: 20.87412856vw;
-        transform: translateY(0);
+        transform: translateY(1vw);
         font-size: 2vw;
     }
     #Sobre article img 
@@ -70,5 +78,139 @@
     {
         transform: translatex(5vw);
         opacity: 1;
+    }
+}
+
+.division{
+    width: 100vw;
+    height: 2vw;
+}
+
+.card-list 
+{
+    transform: translatey(4vw);
+    display: flex;
+    padding: 10vw;
+    overflow-x: scroll;
+    color: var(--cor7);
+}
+.card-list::-webkit-scrollbar 
+{
+    width: 10px;
+    height: 10px;
+}
+.card-list::-webkit-scrollbar-thumb 
+{
+    background: var(--cor10);
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px hsla(246,31%,33%,.25), inset -2px -2px 2px rgba(63,65,111,.25);
+}
+.card-list::-webkit-scrollbar-track 
+{
+    background: linear-gradient(90deg,#3F3A6F,#3F3A6F 1px,#564f96 0,#564f96);
+}
+.card 
+{
+    height: 350px;
+    width: 400px;
+    min-width: 250px;
+    padding: 10px;
+    background: var(--bgCard);
+    box-shadow: -1rem 1rem 2rem rgba(0, 0, 0, 0.3);
+    border-radius: 18px;
+    border: 0.4rem solid rgba(68, 57, 96, 0.1);
+    display: flex;
+    flex-direction: column;
+    transition: .2s;
+    margin: 0;
+    scroll-snap-align: start;
+    clear: both;
+    position: relative;
+}
+@supports ((-webkit-backdrop-filter: blur();) or (backdrop-filter: blur()))
+{
+    .card
+    { 
+        background: var(--bgCardOpacity);
+        -webkit-backdrop-filter: blur(6px);
+        backdrop-filter: blur(6px);
+    }
+
+}
+.card:hover
+{
+    box-shadow: 0rem 0rem 2rem rgba(230, 43, 255, 0.3);
+    transform: translateY(-1rem);
+}
+/*seleciona todos os .card que estão depois do .card:hover*/
+.card:hover~.card
+{
+    transform: translateX(130px);
+}
+.card:not(:first-child)
+{
+    margin-left: -120px;
+}
+.card-author
+{
+    position: relative;
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    align-items: center;
+    margin: 10px 0 0;
+}
+.author-avatar img
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    margin: 16px 10px;
+    display: block;
+    overflow: hidden;
+}
+.card:hover .author-avatar img
+{
+    transition: 0.5s;
+    filter: grayscale(0%);
+}
+.half-circle
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 48px;
+    fill: none;
+    stroke-width: 8;
+    stroke-linecap: round;
+    stroke: var(--cor8);
+}
+.author-name-prefix
+{
+    font-style: normal;
+    color: var(--cor2);
+}
+.card-header{
+    text-align: center;
+}
+.card-header p.title:hover
+{
+    background: var(--colorTextGradient);
+    text-shadow: none;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.explain p
+{
+    text-align: justify;
+    margin: 0 0.5vw;
+    color: var(--cor7);
+    text-decoration: none;
+}
+@media screen and (max-width: 768px){
+    :root{
+        font-size: 12px;
     }
 }

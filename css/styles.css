@@ -9,7 +9,7 @@ body {
   width: 100%;
 }
 
-header {
+header.page {
   position: absolute;
   width: 100vw;
   height: 90vw;
@@ -22,7 +22,7 @@ header {
   transition: 0.2s;
 }
 @media screen and (min-width: 768.2px) {
-  header {
+  header.page {
     transition: 0s;
     margin-left: 1.7457897371vw;
     width: 11.3825490858vw;
@@ -31,12 +31,12 @@ header {
   }
 }
 
-header.active {
+header.page.active {
   top: 0;
   transition: 1s;
 }
 @media screen and (min-width: 768.2px) {
-  header.active {
+  header.page.active {
     margin-left: 1.7457897371vw;
     width: 11.3825490858vw;
     height: 46vw;
