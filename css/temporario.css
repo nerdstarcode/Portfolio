@@ -27,16 +27,48 @@
 }
 #Sobre article img 
 {
-    width: 23.125vw;
-    height: 23.125vw;
+    transform: translate(-2vw, 4vw);
+    width: 20vw;
+    height: 20vw;
+}
+#carouselExampleIndicators button.carousel-control-prev
+{
+    transform: translatex(-6vw);
+    opacity: 0;
+}
+#carouselExampleIndicators button.carousel-control-next
+{
+    transform: translatex(7vw);
+    opacity: 0;
 }
 @media screen and (min-width: 768.2px)
 {
-    #Sobre{
-        width: 80vw;
-        margin-left: 14.87412856vw;
+    #Sobre
+    {
+        width: 70vw;
+        margin-left: 20.87412856vw;
         transform: translateY(0);
         font-size: 2vw;
-
-    }    
+    }
+    #Sobre article img 
+    {
+        transform: translatex(-2vw);
+        width: 23.125vw;
+        height: 23.125vw;
+    }
+    #Sobre article span p
+    {
+        margin-top: 4vw;
+        margin-left: 2vw;
+    }
+    #carouselExampleIndicators button.carousel-control-prev
+    {
+        transform: translatex(-4vw);
+        opacity: 1;
+    }
+    #carouselExampleIndicators button.carousel-control-next
+    {
+        transform: translatex(5vw);
+        opacity: 1;
+    }
 }
