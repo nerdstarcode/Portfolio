@@ -193,6 +193,8 @@
 }
 .card-header{
     text-align: center;
+    background: none;
+    font-size: 1.5em;
 }
 .card-header p.title:hover
 {
@@ -201,6 +203,7 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    cursor: default;
 }
 .explain p
 {
@@ -209,8 +212,13 @@
     color: var(--cor7);
     text-decoration: none;
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768.2px){
     :root{
         font-size: 12px;
+    }
+    .card 
+    {   
+        height: 350px;
+        width: 200px;
     }
 }
