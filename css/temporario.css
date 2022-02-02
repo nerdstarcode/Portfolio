@@ -20,9 +20,8 @@
 {   
     width: 96vw;
     background: var(--cor3);
-    transform: translateY(12vw);
     border-radius: 10vw;
-    margin: 0 2vw 0 2vw ;
+    margin: 12vw 2vw 0 2vw ;
     padding: 4vw;
     color: var(--cor7);
     font-family: var(--text2);
@@ -55,7 +54,7 @@
     {
         width: 70vw;
         margin-left: 20.87412856vw;
-        transform: translateY(1vw);
+        margin-top: 1vw;
         font-size: 2vw;
     }
     #Sobre article img 
@@ -81,16 +80,43 @@
     }
 }
 
-.division{
-    width: 100vw;
-    height: 2vw;
+#Pericias 
+{
+    margin-top: 8vw;
 }
-
+.division
+{
+    width: 99,8vw;
+    height: 2vw;
+    background: var(--cor4);
+    border: 0.2vw solid var(--cor10);
+    border-radius: 27px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 2vw;
+}
+.division-title
+{
+    width: 10vw;
+    height: 4vw;
+    background: var(--cor4);
+    border: 0.2vw solid var(--cor10);
+    border-radius: 27px;
+    position: absolute;
+    right: 45vw;
+    top: -1vw;
+}
+.division-title p
+{
+    color: var(--cor7);
+    font-family: 'Francois One';
+    font-size: 1.5vw;
+    margin: 0.5vw 0;
+}
 .card-list 
 {
-    transform: translatey(4vw);
     display: flex;
-    padding: 10vw;
+    padding: 1vw;
     overflow-x: scroll;
     color: var(--cor7);
 }
@@ -196,7 +222,7 @@
     background: none;
     font-size: 1.5em;
 }
-.card-header p.title:hover
+.card:hover .card-header p.title
 {
     background: var(--colorTextGradient);
     text-shadow: none;
@@ -220,5 +246,23 @@
     {   
         height: 350px;
         width: 200px;
+    }
+    .division
+    {
+        height: 4vw;
+        margin-bottom: 3vw;
+    }
+    .division-title
+    {
+        height: 8vw;
+        width: 30vw;
+        right: 35vw;
+        top: -2vw;
+
+    }
+    .division-title p
+    {
+        font-size: 4vw;
+        margin: 1vw 0;
     }
 }
