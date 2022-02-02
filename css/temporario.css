@@ -172,7 +172,7 @@
 }
 .card:hover
 {
-    box-shadow: 0rem 0rem 2rem rgba(230, 43, 255, 0.3);
+    box-shadow: 0rem 1rem 2rem rgba(230, 43, 255, 0.3);
     transform: translateY(-1rem);
 }
 /*seleciona todos os .card que estão depois do .card:hover*/
