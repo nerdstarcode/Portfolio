@@ -93,7 +93,8 @@
     border-radius: 27px;
     text-align: center;
     position: relative;
-    margin-bottom: 2vw;
+    box-shadow: 0rem 1rem 2rem 1rem rgba(0, 0, 0, 0.2);
+
 }
 .division-title
 {
@@ -105,6 +106,7 @@
     position: absolute;
     right: 45vw;
     top: -1vw;
+
 }
 .division-title p
 {
@@ -116,9 +118,14 @@
 .card-list 
 {
     display: flex;
+    transform: translatey(2vw);
+    margin-bottom: 2vw;
+    display: flex;
     padding: 1vw;
     overflow-x: scroll;
     color: var(--cor7);
+    height: 450px;
+    align-items: center;
 }
 .card-list::-webkit-scrollbar 
 {
@@ -242,15 +249,21 @@
     :root{
         font-size: 12px;
     }
+    .card-list
+    {
+        transform: translatey(7vw);
+        margin-bottom: 7vw;
+        height: 400px;
+    }
     .card 
     {   
+        display: block;
         height: 350px;
         width: 200px;
     }
     .division
     {
         height: 4vw;
-        margin-bottom: 3vw;
     }
     .division-title
     {
