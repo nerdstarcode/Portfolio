@@ -263,7 +263,6 @@
     }
     .division
     {
-        width: 99.7vw;
         height: 4vw;
     }
     .division-title
@@ -279,4 +278,31 @@
         font-size: 4vw;
         margin: 1vw 0;
     }
+}
+#Galeria
+{
+    background: var(--cor4);
+    border-radius: 2vw;
+    margin-top: 3vw;
+}
+#Galeria svg.eapps-instagram-feed-item-source-link-icon
+{
+    color: var(--cor8);
+    box-shadow: 0em 0em 1em rgba(230, 43, 255, 0.3);
+}
+#Galeria div.eui-widget-title a
+{
+    color: var(--cor8) !important;
+}
+#Galeria a.es-post-user-name
+{
+    color: var(--cor8) !important;
+}
+#Galeria div.eapps-instagram-feed-posts-item-template-classic
+{
+    border-radius: 5% ;
+    margin-top: 3vw !important;
+    margin-bottom: 3vw !important;
+    box-shadow: 0rem 0rem 1vw 1vw rgba(230, 43, 255, 0.3);
+
 }
