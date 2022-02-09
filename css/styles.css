@@ -230,28 +230,28 @@ nav.desktop ul li.user {
     height: 23.125vw;
   }
 }
-#Sobre article img button.carousel-control-prev {
+#Sobre button.carousel-control-prev {
   transform: translatex(-6vw);
   opacity: 0;
 }
 @media screen and (min-width: 768.2px) {
-  #Sobre article img button.carousel-control-prev {
+  #Sobre button.carousel-control-prev {
     transform: translatex(-4vw);
     opacity: 1;
   }
 }
-#Sobre article img button.carousel-control-next {
+#Sobre button.carousel-control-next {
   transform: translatex(7vw);
   opacity: 0;
 }
 @media screen and (min-width: 768.2px) {
-  #Sobre article img button.carousel-control-next {
+  #Sobre button.carousel-control-next {
     transform: translatex(5vw);
     opacity: 1;
   }
 }
 @media screen and (min-width: 768.2px) {
-  #Sobre article img span p {
+  #Sobre span p {
     margin-top: 4vw;
     margin-left: 2vw;
   }
