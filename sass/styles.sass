@@ -18,7 +18,7 @@ header.page
     top: -80vw
     transition: 0.2s
     @media screen and(min-width: 768.2px) 
-        ransition: 0s
+        transition: 0s
         margin-left: 1.745789737084vw
         width: 11.382549085789vw
         height: 46vw
@@ -43,27 +43,27 @@ nav.mobile
     @media screen and(min-width: 768.2px) 
         visibility: hidden
         position: absolute
-nav.mobile ul
-    display: grid
-    grid-template-columns: 28vw 28vw 28vw
-    grid-template-rows: 10vw 10vw 10vw
-    grid-gap: 4vw
-    padding: 0  
-nav.mobile ul li
-    text-align: center
-    display: inline-block
-    background: defaut.$ColorPurple6
-    border-radius: 1.562vw
-nav.mobile ul li img
-    transform: translateY(-14px)
-    width: 29vw
-nav.mobile ul li.user , nav ul li.gambiarra
-    background: none
-nav.mobile ul li a
-    position: absolute
-    transform: translate(-50%, 25%)
-    text-decoration: none
-    color: defaut.$ColorWhite
+    ul
+        display: grid
+        grid-template-columns: 28vw 28vw 28vw
+        grid-template-rows: 10vw 10vw 10vw
+        grid-gap: 4vw
+        padding: 0  
+        li
+            text-align: center
+            display: inline-block
+            background: defaut.$ColorPurple6
+            border-radius: 1.562vw
+            img
+                transform: translateY(-14px)
+                width: 29vw
+            a
+                position: absolute
+                transform: translate(-50%, 25%)
+                text-decoration: none
+                color: defaut.$ColorWhite
+        li.user , li.gambiarra
+            background: none
 .MenuPush
     position: absolute
     bottom: 1.9788918205805vw
@@ -94,52 +94,52 @@ nav.desktop
     @media screen and(max-width: 768.2px)
         visibility: hidden
         position: absolute
-nav.desktop ul
-    display: grid
-    grid-template-columns: 8.4496223274871vw
-    grid-template-rows: 3.5vw 3.5vw 3.5vw 3.5vw 3.5vw 3.5vw 3.5vw 3.5vw
-    grid-gap: 0.5vw
-    padding: 0  
-nav.desktop ul li
-    position: relative
-    text-align: center
-    display: inline-block
-    background: url(../img/bgmenu.png), defaut.$ColorPurple6
-    border-radius: 1.2838356164384vw
-    box-shadow: 0.20949476845009vw 0.34915794741681vw 0.34915794741681vw rgba(21, 19, 25, 0.2)
-nav.desktop ul li img.corda
-    position: absolute
-    bottom: 0
-    transform: translate(-50% , 70%)
-    width: 5.5vw
-    height: 2vw
-    z-index: 100
-nav.desktop ul li img
-    width: 5.586527158669vw
-nav.desktop ul li.user
-    background: none
-    box-shadow: none
-nav.desktop ul li a
-    position: absolute
-    transform: translate(-50%, 25%)
-    text-decoration: none
-    color: defaut.$ColorWhite
+    ul
+        display: grid
+        grid-template-columns: 8.4496223274871vw
+        grid-template-rows: 3.5vw 3.5vw 3.5vw 3.5vw 3.5vw 3.5vw 3.5vw 3.5vw
+        grid-gap: 0.5vw
+        padding: 0  
+        li
+            position: relative
+            text-align: center
+            display: inline-block
+            background: url(../img/bgmenu.png), defaut.$ColorPurple6
+            border-radius: 1.2838356164384vw
+            box-shadow: 0.20949476845009vw 0.34915794741681vw 0.34915794741681vw rgba(21, 19, 25, 0.2)
+            img.corda
+                position: absolute
+                bottom: 0
+                transform: translate(-50% , 70%)
+                width: 5.5vw
+                height: 2vw
+                z-index: 100
+            img
+                width: 5.586527158669vw
+            a
+                position: absolute
+                transform: translate(-50%, 25%)
+                text-decoration: none
+                color: defaut.$ColorWhite
+        li.user
+            background: none
+            box-shadow: none
 .tech
     margin-top: 1.5625vw
     opacity: 0.4
     text-align: center
-.tech-content img
-    width: 6.25vw
-    min-width: 25px
-    @media screen and(min-width: 768.2px) 
-        width: 0.8vw
-        min-width: 0px
-.tech p 
-    margin-top: 10px
-    font-size: 4vw
-    @media screen and(min-width: 768.2px) 
-        font-size: 1.5vw
-        margin-top: 0.5vw
+    .tech-content img
+        width: 6.25vw
+        min-width: 25px
+        @media screen and(min-width: 768.2px) 
+            width: 0.8vw
+            min-width: 0px
+    p 
+        margin-top: 10px
+        font-size: 4vw
+        @media screen and(min-width: 768.2px) 
+            font-size: 1.5vw
+            margin-top: 0.5vw
 #Sobre
     width: 96vw
     background: defaut.$ColorPurple4
@@ -151,196 +151,189 @@ nav.desktop ul li a
     text-align: justify
     font-size: 4vw
     box-shadow: 1vw 1vw 2vw rgba(0,0,0,0.3)
-#Sobre article img 
-    transform: translate(-2vw, 4vw)
-    width: 20vw
-    height: 20vw
-    box-shadow: 0 2vw 4vw hsla(273, 83%, 66%, 0.445)
-    border-radius: 50%
-    justify-content: center
-#carouselExampleIndicators button.carousel-control-prev
-    transform: translatex(-6vw)
-    opacity: 0
-#carouselExampleIndicators button.carousel-control-next
-    transform: translatex(7vw)
-    opacity: 0
-@media screen and (min-width: 768.2px)
-    #Sobre
+    @media screen and (min-width: 768.2px)
         width: 70vw
         margin-left: 20.87412856vw
         margin-top: 1vw
         font-size: 2vw
-    #Sobre article img 
-        transform: translatex(-2vw)
-        width: 23.125vw
-        height: 23.125vw
-    #Sobre article span p
-        margin-top: 4vw
-        margin-left: 2vw
-    #carouselExampleIndicators button.carousel-control-prev
-    
-        transform: translatex(-4vw)
-        opacity: 1
-    #carouselExampleIndicators button.carousel-control-next
-    
-        transform: translatex(5vw)
-        opacity: 1
+    article img 
+        transform: translate(-2vw, 4vw)
+        width: 20vw
+        height: 20vw
+        box-shadow: 0 2vw 4vw hsla(273, 83%, 66%, 0.445)
+        border-radius: 50%
+        justify-content: center
+        @media screen and (min-width: 768.2px)
+            transform: translatex(-2vw)
+            width: 23.125vw
+            height: 23.125vw
+        button.carousel-control-prev
+            transform: translatex(-6vw)
+            opacity: 0
+            @media screen and (min-width: 768.2px)
+                transform: translatex(-4vw)
+                opacity: 1
+        button.carousel-control-next
+            transform: translatex(7vw)
+            opacity: 0
+            @media screen and (min-width: 768.2px)
+                transform: translatex(5vw)
+                opacity: 1
+        @media screen and (min-width: 768.2px)
+            span p
+                margin-top: 4vw
+                margin-left: 2vw
 #Pericias 
     margin-top: 8vw
-.division
-    width: 99,8vw
-    height: 2vw
-    background: defaut.$ColorPurple3
-    border: 0.2vw solid defaut.$ColorPurple5
-    border-radius: 27px
-    text-align: center
-    position: relative
-    box-shadow: 0rem 1rem 2rem 1rem rgba(0, 0, 0, 0.2)
-.division-title
-    width: 10vw
-    height: 4vw
-    background: defaut.$ColorPurple3
-    border: 0.2vw solid defaut.$ColorPurple5
-    border-radius: 27px
-    position: absolute
-    right: 45vw
-    top: -1vw
-.division-title p
-    color: defaut.$ColorWhite
-    font-family: defaut.$FontText1
-    font-size: 1.5vw
-    margin: 0.5vw 0
-.card-list 
-    display: flex
-    transform: translatey(2vw)
-    margin-bottom: 2vw
-    display: flex
-    padding: 1vw
-    overflow-x: scroll
-    color: defaut.$ColorWhite
-    height: 450px
-    align-items: center
-.card-list::-webkit-scrollbar 
-    width: 10px
-    height: 10px
-.card-list::-webkit-scrollbar-thumb 
-    background: defaut.$ColorPurple5
-    border-radius: 10px
-    box-shadow: inset 2px 2px 2px hsla(246,31%,33%,.25), inset -2px -2px 2px rgba(63,65,111,.25)
-.card-list::-webkit-scrollbar-track 
-    background: linear-gradient(90deg,#3F3A6F,#3F3A6F 1px,#564f96 0,#564f96)
-.card 
-    height: 350px
-    width: 400px
-    min-width: 250px
-    padding: 10px
-    background: defaut.$ColorPurple6
-    box-shadow: -1rem 1rem 2rem rgba(0, 0, 0, 0.3)
-    border-radius: 18px
-    border: 0.4rem solid rgba(68, 57, 96, 0.1)
-    display: flex
-    flex-direction: column
-    transition: .2s
-    margin: 0
-    scroll-snap-align: start
-    clear: both
-    position: relative
-@supports ((-webkit-backdrop-filter: blur()) or (backdrop-filter: blur()))
-    .card
-        background: defaut.$ColorPurple7
-        -webkit-backdrop-filter: blur(6px)
-        backdrop-filter: blur(6px)
-.card:hover
-    box-shadow: 0rem 1rem 2rem rgba(230, 43, 255, 0.3)
-    transform: translateY(-1rem)
-/*seleciona todos os .card que estão depois do .card:hover*/
-.card:hover~.card
-    transform: translateX(130px)
-.card:not(:first-child)
-    margin-left: -120px
-.card-author
-    position: relative
-    display: grid
-    grid-template-columns: 80px 1fr
-    align-items: center
-    margin: 10px 0 0
-.author-avatar img
-    width: 40px
-    height: 40px
-    border-radius: 50%
-    filter: grayscale(100%)
-    margin: 16px 10px
-    display: block
-    overflow: hidden
-.card:hover .author-avatar img
-    transition: 0.5s
-    filter: grayscale(0%)
-.half-circle
-    position: absolute
-    bottom: 0
-    left: 0
-    width: 60px
-    height: 48px
-    fill: none
-    stroke-width: 8
-    stroke-linecap: round
-    stroke: defaut.$ColorYellow
-.author-name-prefix
-    font-style: normal
-    color: defaut.$ColorGrey2
-.card-header
-    text-align: center
-    background: none
-    font-size: 1.5em
-.card:hover .card-header p.title
-    background: defaut.$ColorTextGradient
-    text-shadow: none
-    background-clip: text
-    -webkit-background-clip: text
-    -webkit-text-fill-color: transparent
-    cursor: default
-.explain p
-    text-align: justify
-    margin: 0 0.5vw
-    color: defaut.$ColorWhite
-    text-decoration: none
-@media screen and (max-width: 768.2px)
-    :root
-        font-size: 12px
-    .card-list
-        transform: translatey(7vw)
-        margin-bottom: 7vw
-        height: 400px
-    .card 
-        display: block
-        height: 350px
-        width: 200px
     .division
-        height: 4vw
-    .division-title
-        height: 8vw
-        width: 30vw
-        right: 35vw
-        top: -2vw
-    .division-title p
-        font-size: 4vw
-        margin: 1vw 0
+        width: 99,8vw
+        height: 2vw
+        background: defaut.$ColorPurple3
+        border: 0.2vw solid defaut.$ColorPurple5
+        border-radius: 27px
+        text-align: center
+        position: relative
+        box-shadow: 0rem 1rem 2rem 1rem rgba(0, 0, 0, 0.2)
+        @media screen and (max-width: 768.2px)
+            height: 4vw
+        .division-title
+            width: 10vw
+            height: 4vw
+            background: defaut.$ColorPurple3
+            border: 0.2vw solid defaut.$ColorPurple5
+            border-radius: 27px
+            position: absolute
+            right: 45vw
+            top: -1vw
+            @media screen and (max-width: 768.2px)
+                height: 8vw
+                width: 30vw
+                right: 35vw
+                top: -2vw
+            p
+                color: defaut.$ColorWhite
+                font-family: defaut.$FontText1
+                font-size: 1.5vw
+                margin: 0.5vw 0
+                @media screen and (max-width: 768.2px)
+                    font-size: 4vw
+                    margin: 1vw 0
+    .card-list 
+        display: flex
+        transform: translatey(2vw)
+        margin-bottom: 2vw
+        display: flex
+        padding: 1vw
+        overflow-x: scroll
+        color: defaut.$ColorWhite
+        height: 450px
+        align-items: center
+        @media screen and (max-width: 768.2px)
+                transform: translatey(7vw)
+                margin-bottom: 7vw
+                height: 400px
+        .card 
+            height: 350px
+            width: 400px
+            min-width: 250px
+            padding: 10px
+            background: defaut.$ColorPurple6
+            box-shadow: -1rem 1rem 2rem rgba(0, 0, 0, 0.3)
+            border-radius: 18px
+            border: 0.4rem solid rgba(68, 57, 96, 0.1)
+            display: flex
+            flex-direction: column
+            transition: .2s
+            margin: 0
+            scroll-snap-align: start
+            clear: both
+            position: relative
+            @media screen and (max-width: 768.2px)
+                display: block
+                height: 350px
+                width: 200px
+        @supports ((-webkit-backdrop-filter: blur()) or (backdrop-filter: blur()))
+            background: defaut.$ColorPurple7
+            -webkit-backdrop-filter: blur(6px)
+            backdrop-filter: blur(6px)
+        .card:hover
+            box-shadow: 0rem 1rem 2rem rgba(230, 43, 255, 0.3)
+            transform: translateY(-1rem)
+        /*seleciona todos os .card que estão depois do .card:hover*/
+        .card:hover~.card
+            transform: translateX(130px)
+        .card:not(:first-child)
+            margin-left: -120px
+        .card-author
+            position: relative
+            display: grid
+            grid-template-columns: 80px 1fr
+            align-items: center
+            margin: 10px 0 0
+        .author-avatar img
+            width: 40px
+            height: 40px
+            border-radius: 50%
+            filter: grayscale(100%)
+            margin: 16px 10px
+            display: block
+            overflow: hidden
+        .card:hover .author-avatar img
+            transition: 0.5s
+            filter: grayscale(0%)
+        .half-circle
+            position: absolute
+            bottom: 0
+            left: 0
+            width: 60px
+            height: 48px
+            fill: none
+            stroke-width: 8
+            stroke-linecap: round
+            stroke: defaut.$ColorYellow
+        .author-name-prefix
+            font-style: normal
+            color: defaut.$ColorGrey2
+        .card-header
+            text-align: center
+            background: none
+            font-size: 1.5em
+        .card:hover .card-header p.title
+            background: defaut.$ColorTextGradient
+            text-shadow: none
+            background-clip: text
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+            cursor: default
+        .explain p
+            text-align: justify
+            margin: 0 0.5vw
+            color: defaut.$ColorWhite
+            text-decoration: none
+    .card-list::-webkit-scrollbar 
+        width: 10px
+        height: 10px
+    .card-list::-webkit-scrollbar-thumb 
+        background: defaut.$ColorPurple5
+        border-radius: 10px
+        box-shadow: inset 2px 2px 2px hsla(246,31%,33%,.25), inset -2px -2px 2px rgba(63,65,111,.25)
+    .card-list::-webkit-scrollbar-track 
+        background: linear-gradient(90deg,#3F3A6F,#3F3A6F 1px,#564f96 0,#564f96)
+    
 #Galeria
     background: defaut.$ColorPurple3
     border-radius: 2vw
     margin: 3vw 5vw
-.containet-galery
-    width: 80vw
-    transform: translatex(5%)
-#Galeria .WidgetTitle__Header-sc-7vkaab-2
-    color: defaut.$ColorYellow !important
-#Galeria div.CardLayout__Container-sc-1degoda-5
-    border-radius: 5% 
-    margin-top: 2vw !important
-    margin-bottom: 5vw !important
-#Galeria div.CardLayout__Container-sc-1degoda-5:hover
-    box-shadow: 0rem 0rem 1vw 1vw rgba(230, 43, 255, 0.3)
-@media screen and (max-width: 768.2px) 
-    #Galeria div.CardLayout__Container-sc-1degoda-5
-        min-height: 405px
-    
+    .containet-galery
+        width: 80vw
+        transform: translatex(5%)
+    .WidgetTitle__Header-sc-7vkaab-2
+        color: defaut.$ColorYellow !important
+    div.CardLayout__Container-sc-1degoda-5
+        border-radius: 5% 
+        margin-top: 2vw !important
+        margin-bottom: 5vw !important
+        @media screen and (max-width: 768.2px) 
+            min-height: 405px
+    div.CardLayout__Container-sc-1degoda-5:hover
+        box-shadow: 0rem 0rem 1vw 1vw rgba(230, 43, 255, 0.3)        
