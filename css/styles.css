@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -23,7 +24,7 @@ header.page {
 }
 @media screen and (min-width: 768.2px) {
   header.page {
-    transition: 0s;
+    ransition: 0s;
     margin-left: 1.7457897371vw;
     width: 11.3825490858vw;
     height: 46vw;
@@ -72,7 +73,7 @@ nav.mobile ul {
 nav.mobile ul li {
   text-align: center;
   display: inline-block;
-  background: #43395E;
+  background: #443960;
   border-radius: 1.562vw;
 }
 
@@ -149,7 +150,7 @@ nav.desktop ul li {
   position: relative;
   text-align: center;
   display: inline-block;
-  background: url(../img/bgmenu.png), #43395E;
+  background: url(../img/bgmenu.png), #443960;
   border-radius: 1.2838356164vw;
   box-shadow: 0.2094947685vw 0.3491579474vw 0.3491579474vw rgba(21, 19, 25, 0.2);
 }
@@ -204,6 +205,292 @@ nav.desktop ul li a {
   .tech p {
     font-size: 1.5vw;
     margin-top: 0.5vw;
+  }
+}
+
+#Sobre {
+  width: 96vw;
+  background: #483E63;
+  border-radius: 10vw;
+  margin: 12vw 2vw 0 2vw;
+  padding: 4vw;
+  color: #E9EBE4;
+  font-family: "Ubuntu";
+  text-align: justify;
+  font-size: 4vw;
+  box-shadow: 1vw 1vw 2vw rgba(0, 0, 0, 0.3);
+}
+
+#Sobre article img {
+  transform: translate(-2vw, 4vw);
+  width: 20vw;
+  height: 20vw;
+  box-shadow: 0 2vw 4vw rgba(175, 96, 240, 0.445);
+  border-radius: 50%;
+  justify-content: center;
+}
+
+#carouselExampleIndicators button.carousel-control-prev {
+  transform: translatex(-6vw);
+  opacity: 0;
+}
+
+#carouselExampleIndicators button.carousel-control-next {
+  transform: translatex(7vw);
+  opacity: 0;
+}
+
+@media screen and (min-width: 768.2px) {
+  #Sobre {
+    width: 70vw;
+    margin-left: 20.87412856vw;
+    margin-top: 1vw;
+    font-size: 2vw;
+  }
+
+  #Sobre article img {
+    transform: translatex(-2vw);
+    width: 23.125vw;
+    height: 23.125vw;
+  }
+
+  #Sobre article span p {
+    margin-top: 4vw;
+    margin-left: 2vw;
+  }
+
+  #carouselExampleIndicators button.carousel-control-prev {
+    transform: translatex(-4vw);
+    opacity: 1;
+  }
+
+  #carouselExampleIndicators button.carousel-control-next {
+    transform: translatex(5vw);
+    opacity: 1;
+  }
+}
+#Pericias {
+  margin-top: 8vw;
+}
+
+.division {
+  width: 99, 8vw;
+  height: 2vw;
+  background: #4B4772;
+  border: 0.2vw solid #3F3A6F;
+  border-radius: 27px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0rem 1rem 2rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.division-title {
+  width: 10vw;
+  height: 4vw;
+  background: #4B4772;
+  border: 0.2vw solid #3F3A6F;
+  border-radius: 27px;
+  position: absolute;
+  right: 45vw;
+  top: -1vw;
+}
+
+.division-title p {
+  color: #E9EBE4;
+  font-family: "Francois One";
+  font-size: 1.5vw;
+  margin: 0.5vw 0;
+}
+
+.card-list {
+  display: flex;
+  transform: translatey(2vw);
+  margin-bottom: 2vw;
+  display: flex;
+  padding: 1vw;
+  overflow-x: scroll;
+  color: #E9EBE4;
+  height: 450px;
+  align-items: center;
+}
+
+.card-list::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.card-list::-webkit-scrollbar-thumb {
+  background: #3F3A6F;
+  border-radius: 10px;
+  box-shadow: inset 2px 2px 2px rgba(63, 58, 110, 0.25), inset -2px -2px 2px rgba(63, 65, 111, 0.25);
+}
+
+.card-list::-webkit-scrollbar-track {
+  background: linear-gradient(90deg, #3F3A6F, #3F3A6F 1px, #564f96 0, #564f96);
+}
+
+.card {
+  height: 350px;
+  width: 400px;
+  min-width: 250px;
+  padding: 10px;
+  background: #443960;
+  box-shadow: -1rem 1rem 2rem rgba(0, 0, 0, 0.3);
+  border-radius: 18px;
+  border: 0.4rem solid rgba(68, 57, 96, 0.1);
+  display: flex;
+  flex-direction: column;
+  transition: 0.2s;
+  margin: 0;
+  scroll-snap-align: start;
+  clear: both;
+  position: relative;
+}
+
+@supports (-webkit-backdrop-filter: blur()) or (backdrop-filter: blur()) {
+  .card {
+    background: #44396099;
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+  }
+}
+.card:hover {
+  box-shadow: 0rem 1rem 2rem rgba(230, 43, 255, 0.3);
+  transform: translateY(-1rem);
+}
+
+/*seleciona todos os .card que estão depois do .card:hover*/
+.card:hover ~ .card {
+  transform: translateX(130px);
+}
+
+.card:not(:first-child) {
+  margin-left: -120px;
+}
+
+.card-author {
+  position: relative;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  align-items: center;
+  margin: 10px 0 0;
+}
+
+.author-avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  margin: 16px 10px;
+  display: block;
+  overflow: hidden;
+}
+
+.card:hover .author-avatar img {
+  transition: 0.5s;
+  filter: grayscale(0%);
+}
+
+.half-circle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 48px;
+  fill: none;
+  stroke-width: 8;
+  stroke-linecap: round;
+  stroke: #ECB757;
+}
+
+.author-name-prefix {
+  font-style: normal;
+  color: #6D6E7B;
+}
+
+.card-header {
+  text-align: center;
+  background: none;
+  font-size: 1.5em;
+}
+
+.card:hover .card-header p.title {
+  background: linear-gradient(90deg, #ECB757, #4E008D);
+  text-shadow: none;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: default;
+}
+
+.explain p {
+  text-align: justify;
+  margin: 0 0.5vw;
+  color: #E9EBE4;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768.2px) {
+  :root {
+    font-size: 12px;
+  }
+
+  .card-list {
+    transform: translatey(7vw);
+    margin-bottom: 7vw;
+    height: 400px;
+  }
+
+  .card {
+    display: block;
+    height: 350px;
+    width: 200px;
+  }
+
+  .division {
+    height: 4vw;
+  }
+
+  .division-title {
+    height: 8vw;
+    width: 30vw;
+    right: 35vw;
+    top: -2vw;
+  }
+
+  .division-title p {
+    font-size: 4vw;
+    margin: 1vw 0;
+  }
+}
+#Galeria {
+  background: #4B4772;
+  border-radius: 2vw;
+  margin: 3vw 5vw;
+}
+
+.containet-galery {
+  width: 80vw;
+  transform: translatex(5%);
+}
+
+#Galeria .WidgetTitle__Header-sc-7vkaab-2 {
+  color: #ECB757 !important;
+}
+
+#Galeria div.CardLayout__Container-sc-1degoda-5 {
+  border-radius: 5%;
+  margin-top: 2vw !important;
+  margin-bottom: 5vw !important;
+}
+
+#Galeria div.CardLayout__Container-sc-1degoda-5:hover {
+  box-shadow: 0rem 0rem 1vw 1vw rgba(230, 43, 255, 0.3);
+}
+
+@media screen and (max-width: 768.2px) {
+  #Galeria div.CardLayout__Container-sc-1degoda-5 {
+    min-height: 405px;
   }
 }
 
