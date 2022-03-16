@@ -6,7 +6,7 @@
 }
 
 body {
-  background: url(../img/bgpage.png), #3F3A6F;
+  background: url(../img/bgpage.png), #412E28;
 }
 
 header.page {
@@ -16,7 +16,7 @@ header.page {
   min-height: 292px;
   z-index: 1000;
   color: #E9EBE4;
-  background: #4B4772;
+  background: #493736;
   border-radius: 0 0 4.6875vw 4.6875vw;
   top: -80vw;
   transition: 0.2s;
@@ -70,7 +70,7 @@ nav.mobile ul {
 nav.mobile ul li {
   text-align: center;
   display: inline-block;
-  background: #443960;
+  background: #2A2829;
   border-radius: 1.562vw;
 }
 nav.mobile ul li img {
@@ -142,7 +142,7 @@ nav.desktop ul li {
   position: relative;
   text-align: center;
   display: inline-block;
-  background: url(../img/bgmenu.png), #443960;
+  background: url(../img/bgmenu.png), #D1C089;
   border-radius: 1.2838356164vw;
   box-shadow: 0.2094947685vw 0.3491579474vw 0.3491579474vw rgba(21, 19, 25, 0.2);
 }
@@ -196,7 +196,7 @@ nav.desktop ul li.user {
 
 #Sobre {
   width: 96vw;
-  background: #483E63;
+  background: #2A2829;
   border-radius: 10vw;
   margin: 12vw 2vw 0 2vw;
   padding: 4vw;
@@ -262,8 +262,7 @@ nav.desktop ul li.user {
 #Pericias .division {
   width: 99, 8vw;
   height: 2vw;
-  background: #4B4772;
-  border: 0.2vw solid #3F3A6F;
+  border: 0.2vw solid #412E28;
   border-radius: 27px;
   text-align: center;
   position: relative;
@@ -277,8 +276,8 @@ nav.desktop ul li.user {
 #Pericias .division .division-title {
   width: 10vw;
   height: 4vw;
-  background: #4B4772;
-  border: 0.2vw solid #3F3A6F;
+  background: #493736;
+  border: 0.2vw solid #412E28;
   border-radius: 27px;
   position: absolute;
   right: 45vw;
@@ -328,7 +327,7 @@ nav.desktop ul li.user {
   width: 400px;
   min-width: 250px;
   padding: 10px;
-  background: #443960;
+  background: #493736;
   box-shadow: -1rem 1rem 2rem rgba(0, 0, 0, 0.3);
   border-radius: 18px;
   border: 0.4rem solid rgba(68, 57, 96, 0.1);
@@ -348,8 +347,8 @@ nav.desktop ul li.user {
   }
 }
 @supports (-webkit-backdrop-filter: blur()) or (backdrop-filter: blur()) {
-  #Pericias .card-list {
-    background: #44396099;
+  #Pericias .card-list .card {
+    background: #4937369f;
     -webkit-backdrop-filter: blur(6px);
     backdrop-filter: blur(6px);
   }
@@ -423,16 +422,16 @@ nav.desktop ul li.user {
   height: 10px;
 }
 #Pericias .card-list::-webkit-scrollbar-thumb {
-  background: #3F3A6F;
+  background: #412E28;
   border-radius: 10px;
   box-shadow: inset 2px 2px 2px rgba(63, 58, 110, 0.25), inset -2px -2px 2px rgba(63, 65, 111, 0.25);
 }
 #Pericias .card-list::-webkit-scrollbar-track {
-  background: linear-gradient(90deg, #3F3A6F, #3F3A6F 1px, #564f96 0, #564f96);
+  background: linear-gradient(90deg, #412E28, #412E28 1px, #493736 0, #493736);
 }
 
 #Galeria {
-  background: #4B4772;
+  background: #493736;
   border-radius: 2vw;
   margin: 3vw 5vw;
 }

@@ -4,7 +4,7 @@
     padding: 0
     box-sizing: border-box
 body 
-    background: url(../img/bgpage.png), #3F3A6F
+    background: url(../img/bgpage.png), defaut.$ColorBrown1
 header.page
     position: absolute
     width: 100vw
@@ -12,7 +12,7 @@ header.page
     min-height: 292px
     z-index: 1000
     color: defaut.$ColorWhite
-    background: defaut.$ColorPurple3
+    background: defaut.$ColorBrown2
     border-radius: 0 0 4.6875vw 4.6875vw
     top: -80vw
     transition: 0.2s
@@ -51,7 +51,7 @@ nav.mobile
         li
             text-align: center
             display: inline-block
-            background: defaut.$ColorPurple6
+            background: defaut.$ColorBlack1
             border-radius: 1.562vw
             img
                 transform: translateY(-14px)
@@ -103,7 +103,7 @@ nav.desktop
             position: relative
             text-align: center
             display: inline-block
-            background: url(../img/bgmenu.png), defaut.$ColorPurple6
+            background: url(../img/bgmenu.png), defaut.$ColorYellow1
             border-radius: 1.2838356164384vw
             box-shadow: 0.20949476845009vw 0.34915794741681vw 0.34915794741681vw rgba(21, 19, 25, 0.2)
             img.corda
@@ -141,7 +141,7 @@ nav.desktop
             margin-top: 0.5vw
 #Sobre
     width: 96vw
-    background: defaut.$ColorPurple4
+    background: defaut.$ColorBlack1
     border-radius: 10vw
     margin: 12vw 2vw 0 2vw 
     padding: 4vw
@@ -187,8 +187,7 @@ nav.desktop
     .division
         width: 99,8vw
         height: 2vw
-        background: defaut.$ColorPurple3
-        border: 0.2vw solid defaut.$ColorPurple5
+        border: 0.2vw solid defaut.$ColorBrown1
         border-radius: 27px
         text-align: center
         position: relative
@@ -198,8 +197,8 @@ nav.desktop
         .division-title
             width: 10vw
             height: 4vw
-            background: defaut.$ColorPurple3
-            border: 0.2vw solid defaut.$ColorPurple5
+            background: defaut.$ColorBrown2
+            border: 0.2vw solid defaut.$ColorBrown1
             border-radius: 27px
             position: absolute
             right: 45vw
@@ -236,7 +235,7 @@ nav.desktop
             width: 400px
             min-width: 250px
             padding: 10px
-            background: defaut.$ColorPurple6
+            background: defaut.$ColorBrown2
             box-shadow: -1rem 1rem 2rem rgba(0, 0, 0, 0.3)
             border-radius: 18px
             border: 0.4rem solid rgba(68, 57, 96, 0.1)
@@ -251,10 +250,10 @@ nav.desktop
                 display: block
                 height: 350px
                 width: 200px
-        @supports ((-webkit-backdrop-filter: blur()) or (backdrop-filter: blur()))
-            background: defaut.$ColorPurple7
-            -webkit-backdrop-filter: blur(6px)
-            backdrop-filter: blur(6px)
+            @supports ((-webkit-backdrop-filter: blur()) or (backdrop-filter: blur()))
+                background: defaut.$ColorBrown2a
+                -webkit-backdrop-filter: blur(6px)
+                backdrop-filter: blur(6px)
         .card:hover
             box-shadow: 0rem 1rem 2rem rgba(230, 43, 255, 0.3)
             transform: translateY(-1rem)
@@ -289,7 +288,7 @@ nav.desktop
             fill: none
             stroke-width: 8
             stroke-linecap: round
-            stroke: defaut.$ColorYellow
+            stroke: defaut.$ColorYellow2
         .author-name-prefix
             font-style: normal
             color: defaut.$ColorGrey2
@@ -313,21 +312,21 @@ nav.desktop
         width: 10px
         height: 10px
     .card-list::-webkit-scrollbar-thumb 
-        background: defaut.$ColorPurple5
+        background: defaut.$ColorBrown1
         border-radius: 10px
         box-shadow: inset 2px 2px 2px hsla(246,31%,33%,.25), inset -2px -2px 2px rgba(63,65,111,.25)
     .card-list::-webkit-scrollbar-track 
-        background: linear-gradient(90deg,#3F3A6F,#3F3A6F 1px,#564f96 0,#564f96)
+        background: linear-gradient(90deg,#412E28,#412E28 1px,#493736 0,#493736)
     
 #Galeria
-    background: defaut.$ColorPurple3
+    background: defaut.$ColorBrown2
     border-radius: 2vw
     margin: 3vw 5vw
     .containet-galery
         width: 80vw
         transform: translatex(5%)
     .WidgetTitle__Header-sc-7vkaab-2
-        color: defaut.$ColorYellow !important
+        color: defaut.$ColorYellow2 !important
     div.CardLayout__Container-sc-1degoda-5
         border-radius: 5% 
         margin-top: 2vw !important
